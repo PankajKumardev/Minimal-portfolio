@@ -55,7 +55,7 @@ export default function Projects() {
             <h2 className="text-base font-semibold text-slate-200">
               {index + 1}. {project.title}
             </h2>
-            <p className="text-slate-400 mt-1 text-sm">
+            <p className="text-slate-400 mt-1 text-base tracking-tight">
               {project.description || 'No description available.'}
             </p>
             <div className="mt-2">
