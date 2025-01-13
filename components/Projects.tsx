@@ -4,14 +4,16 @@ const projects = [
     description:
       'A P2P payment system offering seamless bank integration, real-time transaction tracking, and wallet management.',
     tech: [
-      'Next.js',
       'TailwindCSS',
-      'Docker',
-      'AWS EC2',
+      'Next.js',
       'PostgreSQL',
       'Prisma',
       'NextAuth',
       'Turborepo',
+      'Docker',
+      'AWS EC2',
+      'CI/CD'
+     
     ],
     github: 'https://github.com/PankajKumardev/flowpay',
     live: 'https://flowpay-one.vercel.app',
@@ -31,15 +33,15 @@ const projects = [
       'Docker',
     ],
     github: 'https://github.com/PankajKumardev/feedwall',
-    live: 'https://flowpay-one.vercel.app',
+    live: 'https://feedwall.vercel.app',
   },
   {
     title: 'Ui-Unify',
     description:
       'A platform integrating multiple UI libraries with AI-powered developer tools for seamless interface creation.',
     tech: [
-      'Next.js',
       'TailwindCSS',
+      'Next.js',
       'TypeScript',
       'Gemini API',
       'Framer Motion',
@@ -59,7 +61,7 @@ export default function Projects() {
             <h2 className="text-base font-semibold text-slate-200">
               {index + 1}. {project.title}
             </h2>
-            <p className="text-slate-400 mt-1 text-base tracking-tight">
+            <p className="text-slate-300 mt-1 text-base tracking-tight">
               {project.description || 'No description available.'}
             </p>
             <div className="mt-2">

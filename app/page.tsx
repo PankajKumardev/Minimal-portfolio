@@ -5,11 +5,11 @@ import Skills from '@/components/Skills';
 
 export default function Home() {
   return (
-    <div className="flex flex-col   w-full text-slate-400 mx-auto ">
+    <div className="flex flex-col   w-full text-slate-300 mx-auto ">
       <AboutSection />  
       <Skills />
       <Projects />
-      {/* <Contact/> */}
+      <Contact/>
     </div>
   );
 }
