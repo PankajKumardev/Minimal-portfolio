@@ -21,7 +21,7 @@ export default function Skills() {
     {skill : 'Python'}
   ];
   return (
-    <div className="mt-4 mx-auto max-w-2xl sm:px-2 px-4">
+    <div className="mt-4 mx-auto max-w-2xl sm:px-2 md:px-4 px-8">
       <h2 className="text-xl text-slate-100">Skills & Tools</h2>
       <div className="flex flex-wrap gap-2 mt-2 max-w-2xl">
       {skills.map((skill) => (

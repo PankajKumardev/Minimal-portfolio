@@ -30,7 +30,7 @@ const Socials = [
 
 export default function AboutSection() {
   return (
-    <div className=" mx-auto max-w-2xl px-4">
+    <div className=" mx-auto max-w-2xl md:px-4 px-8 ">
       <div className="flex flex-col md:flex-row justify-between items-center gap-2">
         <h1 className="text-xl font-semibold text-slate-200">
           Hi, I'm Pankaj 👋
@@ -73,7 +73,7 @@ export default function AboutSection() {
 
       <div className="mt-8 flex flex-col ">
         <h2 className="text-xl text-slate-200">About Me.</h2>
-        <ul className="mt-2 flex flex-col gap-2 list-disc list-inside text-base">
+        <ul className="mt-2 flex flex-col gap-2 list-disc list-inside text-base tracking-tight">
           <li>
             Hi, I am Pankaj Kumar, a Full-stack Developer passionate about
             creating and delivering projects that make a real-world impact.
