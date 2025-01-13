@@ -1,10 +1,44 @@
 const projects = [
   {
+    title: 'FlowPay',
+    description:
+      'A P2P payment system offering seamless bank integration, real-time transaction tracking, and wallet management.',
+    tech: [
+      'Next.js',
+      'TailwindCSS',
+      'Docker',
+      'AWS EC2',
+      'PostgreSQL',
+      'Prisma',
+      'NextAuth',
+      'Turborepo',
+    ],
+    github: 'https://github.com/PankajKumardev/flowpay',
+    live: 'https://flowpay-one.vercel.app',
+  },
+  {
+    title: 'Feed-Wall',
+    description:
+      'A platform to collect, analyze, and download feedback for projects with AI-powered summaries.',
+    tech: [
+      'TailwindCSS',
+      'Next.js',
+      'Gemini API',
+      'TypeScript',
+      'PostgreSQL',
+      'Prisma',
+      'NextAuth',
+      'Docker',
+    ],
+    github: 'https://github.com/PankajKumardev/feedwall',
+    live: 'https://flowpay-one.vercel.app',
+  },
+  {
     title: 'Ui-Unify',
     description:
-      'A unified platform integrating multiple UI libraries for seamless development.',
+      'A platform integrating multiple UI libraries with AI-powered developer tools for seamless interface creation.',
     tech: [
-      'Nextjs',
+      'Next.js',
       'TailwindCSS',
       'TypeScript',
       'Gemini API',
@@ -13,45 +47,15 @@ const projects = [
     github: 'https://github.com/pankajkumardev/ui-unify',
     live: 'https://ui-unify.vercel.app',
   },
-  {
-    title: 'FlowPay',
-    description:
-      'A peer-to-peer payment system offering real-time transaction tracking and secure wallet management.',
-    image: '',
-    tech: [
-      'Next.js',
-      'TailwindCSS',
-      'Docker',
-      'AWS EC2',
-      'PostgreSQL',
-      'Prisma',
-    ],
-    github: 'https://github.com/PankajKumardev/flowpay',
-    live: 'https://flowpay-one.vercel.app',
-  },
-
-  {
-    title: 'Feed-Wall',
-    description: '',
-    tech: [
-      'Next.js',
-      'TailwindCSS',
-      'Docker',
-      'AWS EC2',
-      'PostgreSQL',
-      'Prisma',
-    ],
-    github: 'https://github.com/PankajKumardev/feedwall',
-    live: 'https://flowpay-one.vercel.app',
-  },
 ];
+
 export default function Projects() {
   return (
     <div className="mt-8 mx-auto max-w-2xl sm:px-2 md:px-4 px-8">
       <h1 className="text-xl text-slate-100">Projects</h1>
       <div>
         {projects.map((project, index) => (
-          <div key={index} className="my-4 rounded-lg ">
+          <div key={index} className=" my-4 rounded-lg ">
             <h2 className="text-base font-semibold text-slate-200">
               {index + 1}. {project.title}
             </h2>
