@@ -90,16 +90,15 @@ export default function AboutSection() {
             using TypeScript for type safety. I have experience with modern web
             technologies and tools.
           </li>
-          <li>
-            Have an idea and want to collaborate? Feel free to message me! I'm
-            always excited to connect and work on great projects.{' '}
+            <li>
+            Have an idea, want to collaborate, or have an internship opportunity? Feel free to message me! I'm always excited to connect and work on great projects.{' '}
             <a
               href="mailto:Pankajams1234@gmail.com"
               className="text-slate-100 hover:text-blue-300 underline"
             >
               Contact me
             </a>
-          </li>
+            </li>
         </ul>
       </div>
     </motion.div>
