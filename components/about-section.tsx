@@ -1,3 +1,5 @@
+"use client"
+import { motion } from 'framer-motion';
 import {
   FaFileAlt,
   FaGithub,
@@ -30,7 +32,12 @@ const Socials = [
 
 export default function AboutSection() {
   return (
-    <div className=" mx-auto max-w-2xl md:px-4 px-8 ">
+    <motion.div
+      className="mx-auto max-w-2xl md:px-4 px-8"
+      initial={{ filter: 'blur(10px)' }}
+      animate={{ filter: 'blur(0px)' }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="flex flex-col md:flex-row justify-between items-center gap-2">
         <h1 className="text-xl font-semibold text-slate-200">
           Hi, I'm Pankaj 👋
@@ -59,8 +66,7 @@ export default function AboutSection() {
               ))}
             </div>
             <a
-              href="mailto:pankajk.tech2@gmail.com
-"
+              href="mailto:pankajk.tech2@gmail.com"
               className="transition-colors duration-300 flex items-center gap-2 hover:text-white"
             >
               <span className="transition-transform duration-300 text-slate-300 hover:text-white text-sm">
@@ -95,6 +101,6 @@ export default function AboutSection() {
           </li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }

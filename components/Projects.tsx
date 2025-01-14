@@ -1,3 +1,6 @@
+"use client"
+import { motion } from 'framer-motion';
+
 const projects = [
   {
     title: 'FlowPay',
@@ -12,7 +15,7 @@ const projects = [
       'Turborepo',
       'Docker',
       'AWS EC2',
-      'CI/CD'
+      'CI/CD',
     ],
     github: 'https://github.com/PankajKumardev/flowpay',
     live: 'https://flowpay-one.vercel.app',
@@ -52,7 +55,12 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="mt-8 mx-auto max-w-2xl sm:px-2 md:px-4 px-8">
+    <motion.div
+      className="mx-auto max-w-2xl md:px-4 px-8 mt-8"
+      initial={{ filter: 'blur(10px)' }}
+      animate={{ filter: 'blur(0px)' }}
+      transition={{ duration: 0.5 }}
+    >
       <h1 className="text-xl text-slate-100">Projects</h1>
       <div>
         {projects.map((project, index) => (
@@ -97,6 +105,6 @@ export default function Projects() {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -1,5 +1,7 @@
+"use client"
 import Link from 'next/link';
 import { FaTwitter, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const contactMethods = [
   {
@@ -21,7 +23,12 @@ const contactMethods = [
 
 export default function Contact() {
   return (
-    <div className="mt-4 mx-auto max-w-2xl sm:px-2 md:px-4 px-8">
+    <motion.div
+    className="mx-auto max-w-2xl md:px-4 px-8 mt-8"
+    initial={{ filter: 'blur(10px)' }}
+    animate={{ filter: 'blur(0px)' }}
+    transition={{ duration: 0.5 }}
+  >
       <h1 className="text-xl text-slate-100">Reach out to me.</h1>
       <p className="text-base tracking-tight">
         Feel free to reach out to me via email, LinkedIn, or Twitter for any
@@ -43,6 +50,6 @@ export default function Contact() {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
