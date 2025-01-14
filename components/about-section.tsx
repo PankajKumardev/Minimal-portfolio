@@ -15,12 +15,12 @@ const Socials = [
   },
   {
     name: 'GitHub',
-    url: '',
+    url: 'https://github.com/pankajKumardev',
     icon: FaGithub,
   },
   {
     name: 'Twitter',
-    url: '',
+    url: 'https://x.com/pankajkumar_dev',
     icon: FaTwitterSquare,
   },
   {
@@ -68,6 +68,7 @@ export default function AboutSection() {
             <a
               href="mailto:pankajk.tech2@gmail.com"
               className="transition-colors duration-300 flex items-center gap-2 hover:text-white"
+              target='_blank'
             >
               <span className="transition-transform duration-300 text-slate-300 hover:text-white text-sm">
                 pankajk.tech2@gmail.com
