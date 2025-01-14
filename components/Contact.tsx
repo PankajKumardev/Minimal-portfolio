@@ -13,7 +13,7 @@ const contactMethods = [
     label: 'LinkedIn',
   },
   {
-    href: 'mailto:your.email@example.com',
+    href: 'mailto:pankajk.tech2@gmail.com',
     icon: <FaEnvelope />,
     label: 'Email',
   },
@@ -32,12 +32,12 @@ export default function Contact() {
           {contactMethods.map((method, index) => (
             <Link legacyBehavior key={index} href={method.href} passHref>
               <a
-          className="bg-slate-100 text-slate-800 p-2 border rounded shadow text-sm font-semibold flex items-center"
-          target="_blank"
-          rel="noopener noreferrer"
+                className="bg-slate-100 text-slate-800 p-2 border rounded shadow text-sm font-semibold flex items-center"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-          {method.icon}
-          <span className="ml-2">{method.label}</span>
+                {method.icon}
+                <span className="ml-2">{method.label}</span>
               </a>
             </Link>
           ))}

@@ -59,13 +59,13 @@ export default function AboutSection() {
               ))}
             </div>
             <a
-              href="mailto:Pankajams1234@gmail.com"
+              href="mailto:pankajk.tech2@gmail.com
+"
               className="transition-colors duration-300 flex items-center gap-2 hover:text-white"
             >
               <span className="transition-transform duration-300 text-slate-300 hover:text-white text-sm">
-                Pankajdev@gmail.com
+                pankajk.tech2@gmail.com
               </span>
-             
             </a>
           </div>
         </div>

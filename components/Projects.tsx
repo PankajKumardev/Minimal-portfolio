@@ -13,7 +13,6 @@ const projects = [
       'Docker',
       'AWS EC2',
       'CI/CD'
-     
     ],
     github: 'https://github.com/PankajKumardev/flowpay',
     live: 'https://flowpay-one.vercel.app',
@@ -21,7 +20,7 @@ const projects = [
   {
     title: 'Feed-Wall',
     description:
-      'A platform to collect, analyze, and download feedback for projects with AI-powered summaries.',
+      'A platform to collect feedback by integrating a widget with easily embeddable code, analyze the feedback, and download feedbacks with AI-powered summaries.',
     tech: [
       'TailwindCSS',
       'Next.js',
