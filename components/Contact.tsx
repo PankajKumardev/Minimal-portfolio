@@ -5,12 +5,12 @@ import { motion } from 'framer-motion';
 
 const contactMethods = [
   {
-    href: 'https://twitter.com/yourprofile',
+    href: 'https://x.com/pankajkumar_dev',
     icon: <FaTwitter />,
     label: 'Twitter',
   },
   {
-    href: 'https://linkedin.com/in/yourprofile',
+    href: 'https://www.linkedin.com/in/Pankajkumardev0',
     icon: <FaLinkedin />,
     label: 'LinkedIn',
   },
@@ -24,7 +24,7 @@ const contactMethods = [
 export default function Contact() {
   return (
     <motion.div
-    className="mx-auto max-w-2xl md:px-4 px-8 mt-8"
+    className="mx-auto max-w-2xl md:px-4 px-8 mt-8]"
     initial={{ filter: 'blur(10px)' }}
     animate={{ filter: 'blur(0px)' }}
     transition={{ duration: 0.5 }}
