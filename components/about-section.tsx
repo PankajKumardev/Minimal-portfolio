@@ -95,7 +95,7 @@ export default function AboutSection() {
             opportunity? Feel free to message me! I'm always excited to connect
             and work on great projects.{' '}
             <a
-              href="mailto:pankajk.tech2@gmail.com"
+              href="mailto:pankajk.tech2@gmail.com" 
               className="text-slate-100 hover:text-blue-300 underline"
             >
               Contact me
