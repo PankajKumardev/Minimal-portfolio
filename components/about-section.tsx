@@ -25,7 +25,7 @@ const Socials = [
   },
   {
     name: 'Resume',
-    url: 'https://drive.google.com/file/d/1Iz0yq0xUAKdhtS3vpC4vwdcvK-IeTQqz/view',
+    url: 'https://drive.google.com/file/d/167b4GmPNijryljAvf2uJPTKmU2Mzlyek/view?usp=sharing',
     icon: FaFileAlt,
   },
 ];
@@ -66,12 +66,12 @@ export default function AboutSection() {
               ))}
             </div>
             <a
-              href="mailto:pankajk.tech2@gmail.com"
+              href="mailto:pankajams1234@gmail.com"
               className="transition-colors duration-300 flex items-center gap-2 hover:text-white"
               target="_blank"
             >
               <span className="transition-transform duration-300 text-slate-300 hover:text-white text-sm">
-                pankajk.tech2@gmail.com
+                pankajams1234@gmail.com
               </span>
             </a>
           </div>
@@ -95,7 +95,7 @@ export default function AboutSection() {
             opportunity? Feel free to message me! I'm always excited to connect
             and work on great projects.{' '}
             <a
-              href="mailto:pankajk.tech2@gmail.com" 
+              href="mailto:pankajams1234@gmail.com"
               className="text-slate-100 hover:text-blue-300 underline"
             >
               Contact me
