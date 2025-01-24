@@ -25,7 +25,7 @@ const Socials = [
   },
   {
     name: 'Resume',
-    url: 'https://drive.google.com/file/d/167b4GmPNijryljAvf2uJPTKmU2Mzlyek/view?usp=sharing',
+    url: 'https://drive.google.com/file/d/1-qAtBRni5MVGEf581h_syDghmeYYwwFR/view?usp=sharing',
     icon: FaFileAlt,
   },
 ];
