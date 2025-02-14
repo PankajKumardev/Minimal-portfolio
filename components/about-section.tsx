@@ -36,7 +36,7 @@ export default function AboutSection() {
       className="mx-auto max-w-2xl md:px-4 px-8"
       initial={{ filter: 'blur(10px)' }}
       animate={{ filter: 'blur(0px)' }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3 }}
     >
       <div className="flex flex-col md:flex-row justify-between items-center gap-2">
         <h1 className="text-xl font-semibold text-slate-200">

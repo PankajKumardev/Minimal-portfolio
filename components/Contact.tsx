@@ -27,7 +27,7 @@ export default function Contact() {
       className="mx-auto max-w-2xl md:px-4 px-8 mt-8]"
       initial={{ filter: 'blur(10px)' }}
       animate={{ filter: 'blur(0px)' }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3 }}
     >
       <h1 className="text-xl text-slate-100">Reach out to me.</h1>
       <p className="text-base tracking-tight">
