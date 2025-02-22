@@ -29,7 +29,7 @@ export default function Contact() {
       animate={{ filter: 'blur(0px)' }}
       transition={{ duration: 0.3 }}
     >
-      <h1 className="text-xl text-slate-100">Reach out to me.</h1>
+      <h2 className="text-xl text-slate-100">Reach out to me.</h2>
       <p className="text-base tracking-tight">
         Feel free to reach out to me via email, LinkedIn, or Twitter for any
         queries, collaboration opportunities, or further details.

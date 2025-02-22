@@ -61,7 +61,7 @@ export default function Projects() {
       animate={{ filter: 'blur(0px)' }}
       transition={{ duration: 0.3 }}
     >
-      <h1 className="text-xl text-slate-100">Projects</h1>
+      <h2 className="text-xl text-slate-100">Projects</h2>
       <div>
         {projects.map((project, index) => (
           <div key={index} className=" my-4 rounded-lg ">
