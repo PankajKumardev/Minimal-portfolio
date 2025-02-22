@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import { motion } from 'framer-motion';
 
 const projects = [
@@ -19,6 +19,7 @@ const projects = [
     ],
     github: 'https://github.com/PankajKumardev/flowpay',
     live: 'https://flowpay-one.vercel.app',
+    demo: 'https://drive.google.com/file/d/1C5EYXgttfM7UXPuQ__ytBI0Cm21jrnml/view',
   },
   {
     title: 'Feed-Wall',
@@ -36,6 +37,7 @@ const projects = [
     ],
     github: 'https://github.com/PankajKumardev/feedwall',
     live: 'https://feedwall.vercel.app',
+    demo: 'https://drive.google.com/file/d/1-I8RIAP4__Cu2Yxz-rTAwNUP7Y1T3AtU/view',
   },
   {
     title: 'Ui-Unify',
@@ -50,6 +52,7 @@ const projects = [
     ],
     github: 'https://github.com/pankajkumardev/ui-unify',
     live: 'https://ui-unify.vercel.app',
+    demo: 'https://drive.google.com/file/d/1klxRjHmezRuy9FRvQsxLL6U80oS8cd-g/view',
   },
 ];
 
@@ -99,7 +102,16 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live Demo
+                Live
+              </a>
+              <span className="mx-2">|</span>
+              <a
+                href={project.demo}
+                className="text-slate-100 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Demo
               </a>
             </div>
           </div>
