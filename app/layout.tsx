@@ -3,7 +3,7 @@ import { Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import Script from 'next/script';
-import { usePathname } from 'next/navigation';
+import CanonicalLink from '../lib/CanonicalLink'; 
 
 // Google Font Setup
 const spaceGrotesk = Space_Grotesk({
@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 
 // Metadata for the website
 export const metadata: Metadata = {
-  title: 'Pankaj Kumar',
+  title: 'Pankaj Kumar | Full-stack Developer Portfolio',
   description: 'Portfolio of Pankaj Kumar, a Full-stack Developer',
 };
 
@@ -22,27 +22,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const pathname = usePathname();
-  const canonicalUrl = `https://www.pankajk.tech${pathname}`;
-
   return (
     <html lang="en">
-      <head>
-        <link rel="canonical" href={canonicalUrl} />
-        {/* Add any other <head> tags here */}
-      </head>
+      <head></head>
       <body className={`${spaceGrotesk.variable} antialiased`}>
-        {/* Vercel Analytics */}
+        <CanonicalLink />
         <Analytics />
-
-        {/* Tracking Script */}
         <Script
           defer
           data-domain="pankajk.tech" // Replace with your domain
           src="https://analytics-code.vercel.app/tracking-script.js"
         />
-
-        {/* Page Content */}
         {children}
       </body>
     </html>
