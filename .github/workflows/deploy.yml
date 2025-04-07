@@ -22,53 +22,7 @@ jobs:
                   key: ${{ secrets.SSH_KEY }}
                   port: 22
                   script: |
-                      cd Minimal-portfolioname: Deploy to EC2
-
-on:
-    push:
-        branches:
-            - main
-
-jobs:
-    deploy:
-        name: Push to EC2
-        runs-on: ubuntu-latest
-
-        steps:
-            - name: Check Out Repo
-              uses: actions/checkout@v2
-              with:
-                  fetch-depth: 0
-
-            - name: Setup Node.js
-              uses: actions/setup-node@v2
-              with:
-                  node-version: '14'
-
-            - name: Deploy to EC2
-              uses: appleboy/ssh-action@v1.2.0
-              with:
-                  host: ${{ secrets.SSH_HOST }}
-                  username: ${{ secrets.SSH_USERNAME }}
-                  key: ${{ secrets.SSH_KEY }}
-                  port: 22
-                  script: |
                       cd Minimal-portfolio
-                      git pull origin main
-                      npm install
-                      npm run build
-                      npm run start &
-
-            - name: Verify Deployment
-              uses: appleboy/ssh-action@v1.2.0
-              with:
-                  host: ${{ secrets.SSH_HOST }}
-                  username: ${{ secrets.SSH_USERNAME }}
-                  key: ${{ secrets.SSH_KEY }}
-                  port: 22
-                  script: |
-                      cd Minimal-portfolio
-                      curl -s -o /dev/null -w "%{http_code}" http://localhost:3000
                       git pull origin main
                       npm install
                       npm run build
