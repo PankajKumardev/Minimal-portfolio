@@ -23,8 +23,7 @@ jobs:
           port: 22
           script: |
             cd portfolio
-            git pull
+            git pull origin main
             npm install 
             npm run build
             npm run start
-
