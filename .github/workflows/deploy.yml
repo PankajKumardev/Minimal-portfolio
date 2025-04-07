@@ -21,9 +21,4 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           port: 22
-          script: |
-            cd portfolio
-            git pull origin main
-            npm install 
-            npm run build
-            npm run start
+          script: ./deploy.sh
