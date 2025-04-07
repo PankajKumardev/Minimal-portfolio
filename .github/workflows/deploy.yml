@@ -21,4 +21,10 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           port: 22
-          script: whoami
+          script: |
+            cd portfolio
+            git pull
+            npm install 
+            npm run build
+            npm run start
+
