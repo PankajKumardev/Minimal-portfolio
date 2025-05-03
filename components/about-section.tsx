@@ -33,7 +33,7 @@ const Socials = [
 export default function AboutSection() {
   return (
     <motion.div
-      className="mx-auto max-w-2xl md:px-4 px-8"
+      className="mx-auto"
       initial={{ filter: 'blur(10px)' }}
       animate={{ filter: 'blur(0px)' }}
       transition={{ duration: 0.3 }}

@@ -24,7 +24,7 @@ const contactMethods = [
 export default function Contact() {
   return (
     <motion.div
-      className="mx-auto max-w-2xl md:px-4 px-8 mt-8]"
+      className="mx-auto mt-4 w-full"
       initial={{ filter: 'blur(10px)' }}
       animate={{ filter: 'blur(0px)' }}
       transition={{ duration: 0.3 }}

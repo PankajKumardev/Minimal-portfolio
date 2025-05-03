@@ -59,7 +59,7 @@ const projects = [
 export default function Projects() {
   return (
     <motion.div
-      className="mx-auto max-w-2xl md:px-4 px-8 mt-8"
+      className="mx-auto  mt-8"
       initial={{ filter: 'blur(10px)' }}
       animate={{ filter: 'blur(0px)' }}
       transition={{ duration: 0.3 }}
@@ -86,32 +86,32 @@ export default function Projects() {
                 ))}
               </div>
             </div>
-            <div className="mt-2 text-sm">
+            <div className="mt-2 text-sm flex gap-3">
               <a
-                href={project.github}
-                className="text-slate-100 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
+              href={project.github}
+              className="text-slate-100 hover:text-blue-400 transition-colors font-medium hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
               >
-                GitHub
+              GitHub
               </a>
-              <span className="mx-2">|</span>
+              <span className="text-slate-400">|</span>
               <a
-                href={project.live}
-                className="text-slate-100 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
+              href={project.live}
+              className="text-slate-100 hover:text-blue-400 transition-colors font-medium hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
               >
-                Live
+              Live
               </a>
-              <span className="mx-2">|</span>
+              <span className="text-slate-400">|</span>
               <a
-                href={project.demo}
-                className="text-slate-100 hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
+              href={project.demo}
+              className="text-slate-100 hover:text-blue-400 transition-colors font-medium hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
               >
-                Demo
+              Demo
               </a>
             </div>
           </div>
