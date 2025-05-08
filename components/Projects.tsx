@@ -40,6 +40,20 @@ const projects = [
     demo: 'https://drive.google.com/file/d/1-I8RIAP4__Cu2Yxz-rTAwNUP7Y1T3AtU/view',
   },
   {
+    title : 'Bolt',
+    description: "Bolt is a dynamic web-based platform where you can generate complete websites from simple prompts.",
+    tech : [
+      "TailwindCS",
+      "React.js",
+      "Express.js",
+      'Gemini API',
+      'TypeScript',
+      'StackBlitz WebContainer'
+    ],
+    github : 'https://github.com/PankajKumardev/Bolt-Clone',
+    live : "https://boltweb-ai.vercel.app",
+  },
+  {
     title: 'Ui-Unify',
     description:
       'A platform integrating multiple UI libraries with AI-powered developer tools for seamless interface creation.',
