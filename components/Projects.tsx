@@ -52,6 +52,7 @@ const projects = [
     ],
     github : 'https://github.com/PankajKumardev/Bolt-Clone',
     live : "https://boltweb-ai.vercel.app",
+    demo : "https://drive.google.com/file/d/1DB32mZbR76GnCJx8DMzym_df7i33UX7s/view?usp=sharing"
   },
   {
     title: 'Ui-Unify',
