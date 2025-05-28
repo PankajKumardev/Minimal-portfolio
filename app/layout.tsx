@@ -3,7 +3,8 @@ import { Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 import Script from 'next/script';
-import CanonicalLink from '../lib/CanonicalLink'; 
+import CanonicalLink from '../lib/CanonicalLink';
+import LenisProvider from '@/providers/LenisProvider';
 
 // Google Font Setup
 const spaceGrotesk = Space_Grotesk({
@@ -33,7 +34,7 @@ export default function RootLayout({
           data-domain="pankajk.tech" // Replace with your domain
           src="https://analytics-code.vercel.app/tracking-script.js"
         />
-        {children}
+        <LenisProvider>{children}</LenisProvider>
       </body>
     </html>
   );
