@@ -16,6 +16,41 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: 'Pankaj Kumar | Full-stack Developer Portfolio',
   description: 'Portfolio of Pankaj Kumar, a Full-stack Developer',
+  keywords: [
+    'Pankaj Kumar',
+    'Full-stack Developer',
+    'Portfolio',
+    'Web Development',
+    'Software Engineer',
+    'React Developer',
+    'Node.js Developer',
+    'devops engineer',
+    'Next.js Developer',
+  ],
+  authors: [{ name: 'Pankaj Kumar', url: 'https://pankajk.tech' }],
+  openGraph: {
+    title: 'Pankaj Kumar | Full-stack Developer Portfolio',
+    description: 'Portfolio of Pankaj Kumar, a Full-stack Developer',
+    url: 'https://pankajk.tech',
+    siteName: 'Pankaj Kumar',
+    images: [
+      {
+        url: 'https://pankajk.tech/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Pankaj Kumar Portfolio',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pankaj Kumar | Full-stack Developer Portfolio',
+    description: 'Portfolio of Pankaj Kumar, a Full-stack Developer',
+    images: ['https://pankajk.tech/og-image.png'],
+    creator: '@pankajkumar_dev',
+  },
 };
 
 export default function RootLayout({
